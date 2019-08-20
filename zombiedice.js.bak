@@ -2,17 +2,17 @@ let rollCounter = 0;
 let shotCounter = 0;
 let brainsCounter = 0;
 let footCounter = 0;
+let carriedBrains = 0;
 function getRoll(){
 	if(confirm("Click for your roll?")){
-		let rollOne = counterBrains(rollDieOne());
-		let rollTwo = counterBrains(rollDieTwo());
-		let rollThree = counterBrains(rollDieThree());
-		let rollFour = counterBrains(rollDieFour());
-		let rollFive = counterBrains (rollDieFive());
-		let rollSix = counterBrains(rollDieSix());
-		let carriedBrains = brainsCounter - shotCounter;
-		console.log("You got shot " +shotCounter);
-		console.log("Your total brains from the round is " +carriedBrains);
+	rollTheDice();
+	console.log("Your total carried Brains for this round is " +carriedBrains)
+	if (carriedBrains === 10){
+			console.log("you Win!")
+			}
+	else if (carriedBrains < 10){
+		console.log("you lose :( ")
+	}	
 	}
 	else{
 		alert("you didn't roll!")
@@ -44,7 +44,16 @@ function rollDieSix(){
 	let twelveSidedDice = Math.ceil(Math.random()*12);
 	return twelveSidedDice;
 }
-
+function rollTheDice(){
+	let rollOne = counterBrains(rollDieOne());
+		let rollTwo = counterBrains(rollDieTwo());
+		let rollThree = counterBrains(rollDieThree());
+		let rollFour = counterBrains(rollDieFour());
+		let rollFive = counterBrains (rollDieFive());
+		let rollSix = counterBrains(rollDieSix());
+		carriedBrains = brainsCounter - shotCounter;
+		return carriedBrains
+}
 function counterBrains(diceRoll){
 	if(diceRoll === 2){
 		return	++brainsCounter;
@@ -66,8 +75,9 @@ function counterBrains(diceRoll){
 	}
 	else if (diceRoll === 9){
 		return ++shotCounter;
-	}
+		}
 	else if (diceRoll === 12){
 		return ++shotCounter;
+		}
 	}
-}
+	
