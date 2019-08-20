@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Zombie Dice! </title>
+		<script src="zombiedice.js"></script>
+	</head>
+<body>
+	<button onclick= "getRoll()">Press me to roll!</button>
+	<button onclick="getRoll()">Press Me For Second Roll!</button>
+</body>
