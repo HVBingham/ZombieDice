@@ -5,7 +5,7 @@ let footCounter = 0;
 let carriedBrains = 0;
 function getRoll(){
 	if(confirm("Click for your roll?")){
-	rollTheDice();
+	rollAllDice();
 	console.log("Your total carried Brains for this round is " +carriedBrains)
 	if (carriedBrains === 10){
 			console.log("you Win!")
@@ -19,38 +19,13 @@ function getRoll(){
 	}
 }
 
-
-function rollDieOne(){
-	let threeSidedDice = Math.ceil(Math.random()*3);
-	return threeSidedDice;
-} 
-function rollDieTwo(){
-	let fourSidedDice = Math.ceil(Math.random()*4);
-	return fourSidedDice;
-		}
-function rollDieThree(){
- 	let sixSidedDice = Math.ceil(Math.random()*6);
-	return	sixSidedDice;
-}
-function rollDieFour(){
-	let eightSidedDice = Math.ceil(Math.random()*8);
-	return eightSidedDice;
-}
-function rollDieFive(){
-	let tenSidedDice = Math.ceil(Math.random()*10);
-	return tenSidedDice;
-}
-function rollDieSix(){
-	let twelveSidedDice = Math.ceil(Math.random()*12);
-	return twelveSidedDice;
-}
-function rollTheDice(){
-	let rollOne = counterBrains(rollDieOne());
-		let rollTwo = counterBrains(rollDieTwo());
-		let rollThree = counterBrains(rollDieThree());
-		let rollFour = counterBrains(rollDieFour());
-		let rollFive = counterBrains (rollDieFive());
-		let rollSix = counterBrains(rollDieSix());
+function rollAllDice(){
+		let diceOne = counterBrains(rollSingleDice(3));
+		let diceTwo = counterBrains(rollSingleDice(4));
+		let diceThree = counterBrains(rollSingleDice(6));
+		let diceFour = counterBrains(rollSingleDice(8));
+		let diceFive = counterBrains (rollSingleDice(10));
+		let diceSix = counterBrains(rollSingleDice(12));
 		carriedBrains = brainsCounter - shotCounter;
 		return carriedBrains
 }
@@ -79,5 +54,11 @@ function counterBrains(diceRoll){
 	else if (diceRoll === 12){
 		return ++shotCounter;
 		}
+	else{
+		return ++footCounter;
 	}
-	
+	}
+function rollSingleDice(sides){
+	let roll = Math.ceil(Math.random()*sides);
+	return roll;
+}
