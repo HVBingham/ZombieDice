@@ -6,20 +6,40 @@
 	
 
 function getRoll(){
-	if(confirm("Click for your roll.")){
-		if(clicks <= 9){
-			rollAllDice();
-			console.log("Your total Brains after this round is " +carriedBrains)
+	if(confirm("Click okay to test your fates agains this encounter!")){
+		if(clicks <= 7){
 			let numberOfTurns = countTurns();
 			console.log("Round" +numberOfTurns);
-			if(carriedBrains >= 5 && clicks===10){
-				console.log("You win")		
+			rollAllDice();
+			console.log("OW! You've been shot! collected shots is now "+shotCounter);
+			console.log("Sweet you were able to eat! collected brains are now at  "+brainsCounter);
+			console.log("whew! Well at least your weren't shot you did have " +footCounter +" total walk aways");
+			console.log("Well you now have " +carriedBrains +" total lives.");
+			if(clicks===1){
+			alert("roll again you filthy zombie, you!");
+			}	
+			else if (clicks ===2){
+				alert("come on you can do better than that. SURVIVE!");
 			}
-			else if(carriedBrains < 5 && clicks ===10){
-				console.log("you lose")
+			else if (clicks === 3){
+				alert("Your not even trying, are you.");
 			}
+			else if (clicks === 4){
+				alert("so it looks like your giving up");
+			}
+			else if(clicks === 5){
+				alert("What is wrong with you.");
+			}
+			if(carriedBrains >= 5 && clicks===8){
+				alert("You win");		
+			}
+			else if(carriedBrains < 5 && clicks ===8){
+				alert("you lose");
+			}
+			
 		}
 		}
+		
 	else{
 		
 		alert("you didn't roll!")
@@ -33,9 +53,6 @@ function rollAllDice(){
 		counterBrains(rollSingleDice(8));
 		counterBrains (rollSingleDice(10));
 		counterBrains(rollSingleDice(12));
-		console.log("your shots for this round is "+shotCounter)
-		console.log("your brains for this round is "+brainsCounter)
-		console.log("your feet for this round is "+footCounter)
 		carriedBrains = brainsCounter - shotCounter
 		return carriedBrains
 }
@@ -78,16 +95,5 @@ function rollSingleDice(sides){
 function countTurns(){
 	let counting = clicks +=1
 	return counting
-	
-}
-function winOrLose(){
-		if(carriedBrains == 5){
-		console.log("You Win!");
-	}
-	else {
-			console.log("You lose!")
-		}
-}
-function addEmUp(){
 	
 }
