@@ -6,7 +6,7 @@
 	
 
 function getRoll(){
-	if(){
+	if(confirm("Click ok to test your fates against this encounter!")){
 		if(clicks <= 7){
 			let numberOfTurns = countTurns();
 			console.log("Round" +numberOfTurns);
@@ -42,7 +42,7 @@ function getRoll(){
 		
 	else{
 		
-		alert("you didn't roll!")
+		alert("woah, What are you to scared to roll!")
 		}
 	}
 

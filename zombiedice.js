@@ -6,7 +6,7 @@
 	
 
 function getRoll(){
-	if(confirm("Click okay to test your fates agains this encounter!")){
+	if(confirm("Click ok to test your fates against this encounter!")){
 		if(clicks <= 7){
 			let numberOfTurns = countTurns();
 			console.log("Round" +numberOfTurns);
@@ -28,7 +28,7 @@ function getRoll(){
 				alert("so it looks like your giving up");
 			}
 			else if(clicks === 5){
-				alert("What is wrong with you.");
+				alert("What's wrong with you.");
 			}
 			if(carriedBrains >= 5 && clicks===8){
 				alert("You win");		
@@ -42,7 +42,7 @@ function getRoll(){
 		
 	else{
 		
-		alert("you didn't roll!")
+		alert("woah, What are you to scared to roll!")
 		}
 	}
 
