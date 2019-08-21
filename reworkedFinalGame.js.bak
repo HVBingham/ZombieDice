@@ -82,7 +82,7 @@ function shotAlerts(){
 }
 function brainAlerts(){
 	if(brainsCounter===0){
-		console.log("WOOOOOW. Those humans got the best of you "+brainsCounter+" for you!");
+		console.log("WOOOOOW. Those humans got the best of you "+brainsCounter+" brains for you!");
 	}
 	else{
 	console.log("Sweet you are a killing machine! Your collected brains is now at  "+brainsCounter);

@@ -32,10 +32,43 @@ h2{
 }
 ul{
 	list-style: none;
+	margin-right: 5px;
 }
 .listwritting{
-	color: black
+		color: black;
 	font-family: Courier New;
-	font-size:20px;
+	font-size: 	15px;
 	font-weight: bold;
+}
+button{
+  background-color:  #AFE313;
+  border: none;
+  color: #56887D;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.buttonhannah{
+	border-radius: 12px;
+}
+button:hover {
+  background-color: #9DE093;
+  color: black;
+}
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  border-radius: 12px;
+}
+.imagesfloatclass{
+	margin-left:15px;
+}
+
+.imagesfloatclass2{
+	margin-right:10px;
+	float: center;
+	
 }

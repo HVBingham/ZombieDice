@@ -5,43 +5,68 @@
 		<title>Zombie Dice REVISED</title>
 		<script type="text/javascript" src="reworkedFinalGame.js"></script>
 		<link rel="stylesheet" type="text/css" href="zombiedicecss.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
 	<body>
 		<h1>Zombie Dice</h1>
-		<h2> The rules:</h2>
-		<div class="transbox">
-			<p class="bodywritting">
-				Welcome to Zombie Dice.<br><br>
-	 			The name of the game here folks is to try and survive.<br><br>
-	 			Plot twist YOU ARE THE ZOMBIE!<br><br>
-				With every click of the button you will be rolling six dice.<br><br>
-				On each die there are different amount of Brains, Shots, and Feet.<br><br>
-				At the end of the round after you have seen your totals, hit the clear button to keep that console all nice and tidy will ya?
-			</p>
+		<div class= "container">
+			<div class="row">
+				<div class="col-md-4">
+					<h2> The rules:</h2>
+					<div class="transbox">
+						<p class="bodywritting">
+							Welcome to Zombie Dice.<br><br><br>
+			 				The name of the game here is to try and survive.<br><br>
+			 				Plot twist YOU ARE THE ZOMBIE!<br><br>
+							With every click of the button you will be rolling six dice.<br><br>
+							On each die there are different amount of Brains, Shots, and Feet.<br><br><br>
+							At the end of the round after you have seen the totals, hit the clear button to keep that console all nice and tidy.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<br>
+					<br>
+					<br>
+					<img src="zombie2.png"; alt="zombie character"; width=250; height=300;>
+					<br><br><br>
+					<button class="buttonhannah" onclick="runGame()">Click to see your survival results.</button>
+					<div class="transbox">
+						<img src="bloodyhand.png"; alt="blood on your hands"; class="imagesfloatclass"; width=150; height=200;>
+					</div>
+					<button class="buttonhannah" onclick="clearIt()">Click to clear the console for the next round.</button>
+					<br>
+					<br>
+					<br>
+					<img src="zombie.gif"; alt="rise up!";class="imagesfloatclass2" width=250; height=300 >
+				</div>
+				<div class="col-md-4">
+					<h2> The break down:</h2>
+					<div class="transbox">
+						<ul class="listwritting">
+							<li>As per zombie life rules you need brains to survive.</li>
+							<li><li style="color:#8FD400;text-align: center;">Shots damage you and take away the brains you collected.</style></li>
+							<li>Wait what about the feet you say?</li>
+							<li><li style="color:#AFE313;text-align: center;">Don't worry the feet mean you niether eat nor take in damage.</style></li>
+							<li>The brains will be totaled.</li>
+							<li><li style="color:#8FD400;text-align: center;">Shots will be totaled as well as the feet.</style></li>
+							<li>These will all be recorded and shown at the end of each round.</li>
+							<li><li style="color:#AFE313;text-align: center;">The shots you collect will be deducted from your total brains.</style></li>
+							<li>The end result will be how much health you have left over.</li>
+							<li><li style="color:#8FD400;text-align: center;">You get 8 total rounds and at the end if you have a level 5 or higher health You win!</style></li>
+							<li>You survive as the brain eating, grunting, human hunting machine that you are.</li>
+							<li><li style="color:#AFE313;text-align: center;">But what if at the end of the 8 rounds you have less than a level 5 health you say? That's it!</style></li>
+							<li>You lose and you die the sad painful death of a injured shot-up, starving zombie!</li>
+							<li><li style="color:#8FD400;text-align: center;">You will be insulted so beware this game is not for the sensitive!</style></li>
+							<li>Only the most hardend, tough, rough and tumbled luck-filled zombies survive.</li>
+							<li><li style="color:#AFE313;text-align: center;">Now go on do it.... SURVIVE! Click the button to start.</style></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
-		
-		<h2>So here's the break down.</h2>
-		<br><br>
-		<div class="transbox">
-			<ul>
-				<li class="listwritting">As per zombie life rules you need brains to survie,shots damage you and take away the brains you collected.</li>
-				<li>Wait what about the feet you say?</li>
-				<li>Don't worry the feet mean you niether eat nor take in damage.</li>
-				<li>When you click your brains will be totaled, shots will be totaled as well as the feet.</li>
-				<li>These will all be recorded and then shown at the end of each round in the console.</li>
-				<li>The shots you collect will be deducted from your total brains and the end result will be how much health you have left over. </li>
-				<li>You get 8 total rounds and at the end if you have a level 5 or higher health You win!</li>
-				<li>You survive as the brain eating, grunting, human hunting machine that you are.</li>
-				<li>But what if at the end of the 8 rounds you have less than a level 5 health you say? That's it!</li>
-				<li>You lose and you die the sad painful death of a injured shot-up, starving zombie!</li>
-				<li>You will be insulted so beware this game is not for the sensitive!</li>
-				<li>Only the most hardend, tough, rough and tumbled luck-filled zombies survive.</li>
-				<li>Yes this is a game of pure luck but thats the fun of it right?!?</li>
-				<li>Now go on do it.... SURVIVE! Click the button to start.</li>
-			</ul>
-		</div>
-			<button onclick="runGame()">Click to see your survival results.</button>
-			<button onclick="clearIt()">Click to clear the console for the next round.</button>
+	
+	
 	
 	</body>
 </html>

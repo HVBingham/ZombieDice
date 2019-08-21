@@ -19,7 +19,7 @@ function getRoll(){
 		carriedBrainAlerts();
 		insultAlerts();
 		winOrLose();	
-		}
+	}
 }
 function rollAllDice(){
 		counterBrains(rollSingleDice(3));
