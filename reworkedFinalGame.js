@@ -20,6 +20,9 @@ function getRoll(){
 		insultAlerts();
 		winOrLose();	
 	}
+	else{
+		alert("You're done. Refresh the page if you would like to play again. If not who cares I didn't want you to play anyway.")
+	}
 }
 function rollAllDice(){
 		counterBrains(rollSingleDice(3));

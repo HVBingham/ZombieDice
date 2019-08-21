@@ -8,16 +8,18 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
 	<body>
-		<h1>Zombie Dice</h1>
+		<h1 id="topofthepage">Zombie Dice</h1>
 		<div class= "container">
 			<div class="row">
 				<div class="col-md-4">
 					<h2> The rules:</h2>
 					<div class="transbox">
 						<p class="bodywritting">
-							Welcome to Zombie Dice.<br><br><br>
+							Welcome to Zombie Dice.<br>
 			 				The name of the game here is to try and survive.<br><br>
 			 				Plot twist YOU ARE THE ZOMBIE!<br><br>
+			 				This guy --><br>
+							This is you ---><br><br>
 							With every click of the button you will be rolling six dice.<br><br>
 							On each die there are different amount of Brains, Shots, and Feet.<br><br><br>
 							At the end of the round after you have seen the totals, hit the clear button to keep that console all nice and tidy.
@@ -27,18 +29,25 @@
 				<div class="col-md-4">
 					<br>
 					<br>
+					<div class=tansbox>
 					<br>
-					<img src="zombie2.png"; alt="zombie character"; width=250; height=300;>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<img src="zombie2.png"; alt="zombie character"; width=300 ; height=300 >
 					<br><br><br>
 					<button class="buttonhannah" onclick="runGame()">Click to see your survival results.</button>
-					<div class="transbox">
-						<img src="bloodyhand.png"; alt="blood on your hands"; class="imagesfloatclass"; width=150; height=200;>
-					</div>
+					<br>
+					<img src="bloodyhand.png"; alt="blood on your hands"; class="centerit"; width=150; height=200;>
+					<br>
 					<button class="buttonhannah" onclick="clearIt()">Click to clear the console for the next round.</button>
 					<br>
 					<br>
 					<br>
-					<img src="zombie.gif"; alt="rise up!"; width=200; height=300 >
+					<img src="zombie.gif"; alt="rise up!"; width=300; height=auto; class="centerit">
 				</div>
 				<div class="col-md-4">
 					<h2> The break down:</h2>
@@ -59,7 +68,8 @@
 							<li>You lose and you die the sad painful death of a injured shot-up, starving zombie!</li>
 							<li><li style="color:#8FD400;text-align: center;">You will be insulted so beware this game is not for the sensitive!</style></li>
 							<li>Only the most hardend, tough, rough and tumbled luck-filled zombies survive.</li>
-							<li><li style="color:#AFE313;text-align: center;">Now go on do it.... SURVIVE! Click the button to start.</style></li>
+							<li><li style="color:#AFE313;text-align: center;">Now go on do it.... SURVIVE!</style></li> 
+							<li><a href="#topofthepage">Use me to get to the top of the page then click the survival button to start.</a>
 						</ul>
 					</div>
 				</div>

@@ -20,8 +20,8 @@ h2{
 	margin: 10px;
 	background: #ffffff;
 	border: 3px solid white;
-	opacity: .7;
-	filter: alpha(opacity=70);
+	opacity: .6;
+	filter: alpha(opacity=60);
 	
 }
 .bodywritting{
@@ -63,7 +63,19 @@ button:active {
   transform: translateY(4px);
   border-radius: 12px;
 }
-.imagesfloatclass{
-	margin-left:15px;
+.centerit{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
+#topofthePage{
+	
+}
+div div div div ul li a{
+	color: #56887D;
+}
+div div div div ul li a:hover{
+	color:#666;
+}
