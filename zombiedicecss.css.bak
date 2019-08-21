@@ -1,0 +1,41 @@
+body{
+	background-image:url(zombiebackground.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	}
+	
+
+h1{
+	text-align: center;
+	color: #AFE313;
+	font-family: impact;
+}
+h2{
+	text-align: center;
+	color: #BEE64B;
+	font-family: impact;
+}
+.transbox{
+	margin: 10px;
+	background: #ffffff;
+	border: 3px solid white;
+	opacity: .7;
+	filter: alpha(opacity=70);
+	
+}
+.bodywritting{
+	color: black;
+	font-family: Courier New;
+	font-size: 	25px;
+	font-weight: bold;
+}
+ul{
+	list-style: none;
+}
+.listwritting{
+	color: black
+	font-family: Courier New;
+	font-size:20px;
+	font-weight: bold;
+}
