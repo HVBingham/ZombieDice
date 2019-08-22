@@ -77,7 +77,7 @@ function displayRounds(){
 }
 function shotAlerts(){
 	if(shotCounter===0){
-		console.log("Sweet you evaided the attack and collected " +shotCounter +" shots!");
+		console.log("Sweet you evaded the attack and collected " +shotCounter +" shots!");
 	}
 	else{
 		console.log("OW! You've been shot! Collected shots is now "+shotCounter);
